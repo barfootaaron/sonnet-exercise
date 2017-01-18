@@ -14,9 +14,9 @@ console.log('sonnet length:', sample);
 var newString = sonnet.replace('winter', 'yuletide');
 console.log('New String:', newString);
 
-// Replace all occurences of 'the' with 'a large'
-var newString2 = sonnet.replace(/the /gi, 'a large ');
+// Then, in newString replace all occurences of 'the' with 'a large'
+var newString2 = newString.replace(/the /gi, 'a large ');
 console.log('New String:', newString2);
 
-var newDiv = document.getElementById("newString");
+// Replace sonnet with new String
 document.getElementById('sonnet').innerHTML = newString2;
